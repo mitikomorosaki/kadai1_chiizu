@@ -1,0 +1,409 @@
+/* ここから下に記載していく */
+/* ヘッダー全体 */
+#header {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ヘッダーの中身を左右に配置 */
+.header-inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* ロゴ画像の高さを調整 */
+.logo img {
+  height: 60px;
+}
+
+/* ナビメニュー */
+.gnav ul {
+  display: flex;
+  gap: 30px; /* メニューの間隔 */
+  list-style: none;
+}
+
+/* ナビリンクの見た目 */
+.gnav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 21px; /* 指定あり */
+  transition: opacity 0.3s;
+}
+
+/* ホバー時のアクション */
+.gnav a:hover {
+  opacity: 0.7;
+}
+
+.mainvisual {
+  position: relative;
+  width: 1200px;
+  height: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mainvisual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mainvisual-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;   /* ← 改行を禁止 */
+  width: 100%;            /* ← 横幅いっぱい */
+}
+
+.mainvisual-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.mainvisual-text p {
+  font-size: 32px;
+}
+
+/* about全体 */
+.about .inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+/* タイトルのサイズ */
+.about h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffd700; /* ← 追加：黄色にする */  
+}
+
+.about h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* テキストと画像のセット */
+.about p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* 画像の表示 */
+.about-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* COURSEセクション */
+.course-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+text-align: center;
+font-size: 24px;
+margin: 30px;
+}
+
+.course-item {
+  display: flex;
+
+}
+
+.course-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.course-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 0 5%; */
+  margin: 0 50px;
+}
+
+.course-title {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.course-description {
+  line-height: 1.8;
+}
+
+/* NEWSセクション全体 */
+.news-inner {
+  width: 960px;  /* 300×3 + 30×2 */
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+/* 見出し */
+.news .section-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.news .section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+/* 横並び */
+.news-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 各NEWS記事ボックス */
+.news-item {
+  width: 300px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* hover時のアクション */
+.news-item:hover {
+  opacity: 0.8;
+  transform: translateY(-4px);
+}
+
+/* 画像 */
+.news-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* 日付 */
+.news-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* 本文テキスト */
+.news-text {
+  font-size: 14px;
+  line-height: 1.6;
+  /* margin-bottom: 60px; */
+}
+/* Moreボタンラッパー（中央揃え & 60px余白） */
+.more-button-wrapper {
+  text-align: center;
+  /* margin-top: 60px; */
+  margin-bottom: 60px;
+}
+
+/* Moreボタンの見た目 */
+.more-button {
+  display: inline-block;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ffd700; /* 明るい黄色 */
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* hoverアクション */
+.more-button:hover {
+  background-color: #f2c600;
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Accessセクション */
+.access-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Access見出し */
+.access-section .section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* 会社情報テキスト */
+.access-info {
+  font-size: 16px;
+  color: #444;
+}
+
+.map-and-info {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto; /* 地図下60px */
+}
+
+/* 会社情報テーブル */
+.info-table {
+  width: 700px;
+  margin: 60px auto; /* 上下60px、中央配置 */
+  display: flex;
+  flex-direction: column;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  height: 50px;         /* 行の高さ指定 */
+}
+
+.info-label {
+  width: 150px;
+  text-align: left;
+  font-weight: bold;
+  margin-right: 50px;   /* ラベルと内容の間隔 */
+}
+
+.info-value {
+  text-align: left;
+  white-space: nowrap;       /* 折り返さず1行表示 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-section {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 70px;
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px; /* タイトル→サブタイトル */
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  margin-bottom: 60px; /* サブタイトル→メッセージ */
+}
+
+.contact-message {
+  margin-bottom: 30px;
+}
+
+.contact-message p,
+.contact-note p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* .contact-note {
+  font-size: 14px;
+} */
+
+.form-area {
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form .form-row {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-button button {
+  width: 300px;
+  height: 60px;
+  background-color: #ffd700;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-button button:hover {
+  background-color: #f2c600;
+  opacity: 0.9;
+}
+
+#footer {
+  background-color: #707070;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-inner p {
+  font-size: 14px;
+  color: #fcfafa;
+  margin: 0;
+}
