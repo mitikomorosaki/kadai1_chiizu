@@ -1,1 +1,0 @@
-# kadai1_chiizu
